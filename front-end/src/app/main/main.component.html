@@ -1,0 +1,46 @@
+<div style="overflow:auto;width:100%;">
+ 
+ <!-- Product grid -->
+      <!-- <div class="container">
+        <div class="row" *ngFor="let c of clothingList, let i = index" style="float: left">
+          <img src="{{c.picture}}" alt="" style="width:100%">
+          <p>{{c.name}}</p>
+          <p>{{c.type}}</p>
+          <p>{{c.price}}</p>
+
+        </div>
+      </div> -->
+
+  <!-- <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="/w3images/jeans4.jpg" style="width:100%">
+        <p>Vintage Skinny Jeans<br><b>$14.99</b></p>
+      </div>
+      <div class="w3-container">
+        <img src="/w3images/jeans1.jpg" style="width:100%">
+        <p>Ripped Skinny Jeans<br><b>$24.99</b></p>
+      </div>
+    </div> -->
+
+
+    <!-- THUMBNAILSS -->
+  <div class="container catalogue">
+      <div class="row display-flex" *ngFor="let c of clothingList, let i = index" data-toggle="popover" data-trigger="hover" data-content="Some content">
+          <div class="col-xs-12">
+        <img src="{{c.picture}}" alt="" class="img-responsive center-block">
+        <div class="caption">
+          <a href="" class="">
+            <h3>{{c.name}}</h3>
+            <p>{{c.price}}</p>
+          </a>
+          <p>
+            <button type="button" class="btn btn-danger" (click)="AddTask(u)">Add to cart</button>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+  
